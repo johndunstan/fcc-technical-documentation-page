@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+
+    <title>Technical Documentation Page</title>
+    <meta name="description" content="Sample Technical Documentation Page" />
+    <meta name="author" content="SitePoint" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Roboto:300,700" rel="stylesheet">
+  
+    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+
+  <body>
+    <nav id="navbar">
+      <header>
+        Table of Contents
+      </header>
+      <ul>
+        <a href="#top-of-page" class="nav-link"><li class="nav-style active toc-top-level">Code Learning Notes</li></a>
+        <a href="#Git_and_GitHub" class="nav-link"><li class="nav-style">Git and GitHub</li></a>
+        <a href="#Section_2" class="nav-link"><li class="nav-style">Section 2</li></a>
+        <a href="#Section_3" class="nav-link"><li class="nav-style">Section 3</li></a>
+        <a href="#Section_4" class="nav-link"><li class="nav-style">Section 4</li></a>
+        <a href="#Section_5" class="nav-link"><li class="nav-style">Section 5</li></a>
+      </ul>
+    </nav>
+
+    <!-- Top Navigation Menu -->
+    <!-- (From W3 Schools: https://www.w3schools.com/howto/howto_js_mobile_navbar.asp) -->
+    <div id="topnav">
+      <a href="#home" class="active">Table of Contents</a>
+      <!-- Navigation links (hidden by default) -->
+      <div id="myLinks">
+        <a class="top-nav-link" href="#top-of-page">Code Learning Notes</a>
+        <a class="top-nav-link" href="#Git_and_GitHub">Git and GitHub</a>
+        <a class="top-nav-link" href="#Section_2">Section 2</a>
+        <a class="top-nav-link" href="#Section_3">Section 3</a>
+        <a class="top-nav-link" href="#Section_4">Section 4</a>
+        <a class="top-nav-link" href="#Section_5">Section 5</a>
+      </div>
+      <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+
+    <main id="main-doc">
+
+      <h1 id="top-of-page">Code Learning Notes 📚</h1>
+
+      <section class="main-section" id="Git_and_GitHub">
+        <header><h2>Git and GitHub</h2></header>
+      
+        <h3>Git Project Commits (Download/Upload)</h3>
+        <p>
+          You can follow instructions in the beginning of this YouTube
+          <a href="https://www.youtube.com/watch?v=4LNf5qcQWHQ" target="_blank"
+            >video from Lambda School</a
+          >.
+        </p>
+
+        <h3>Download Onto Machine</h3>
+        <h4>Fork and clone the repo with GitHub</h4>
+          <p>
+            <ol>
+              <li>In GitHub: fork the master branch (select the “fork” button toward upper right)</li>
+              <li>In GitHub: get address of the branch addressing by selecting the green Clone or Download button and copying the url of your branch</li>
+              <li>In command prompt / terminal: navigate to desired folder > <span class="code-block"><code>git clone {paste copied url from GitHub}</code></span></li>
+            </ol>
+          </p>
+        <h4>Create a branch from repo</h4>
+          <p>
+            Get to and pull freshest code for desired branch to branch off
+            <ol>
+              <li><span class="code-block"><code>git checkout {master or desired branch}</code></span></li>
+              <li><span class="code-block"><code>git pull</code></span></li>
+              <li><span class="code-block"><code>git checkout -b {desired-branch-name}</code></span> - that will create a new branch for you</li>
+            </ol>
+        </p>
+
+        <h3>Commit changes / Upload back to branch on GitHub</h3>
+        <p>
+          Do these from the command prompt (be in appropriate folder)
+          <ol>
+            <li><span class="code-block"><code>git status</code></span>
+            <ul><li>Should see changed files in red</li></ul>
+            </li>
+            <li><span class="code-block"><code>git add --all</code></span>(can all add a specific file, e.g. “git add exercises.js”)
+            </li>
+            <li><span class="code-block"><code>git status</code></span>
+              <ul><li>Shoud see changed files in green</li></ul>
+            </li>
+            <li><span class="code-block"><code>git commit -m "your commit message"</code><span class="code-block"></span></li>
+            <li><span class="code-block"><code>git push origin {branch name}</code><span class="code-block"></span></li>
+          </ol>
+        </p>
+
+        <h3>Other References</h3>
+        <p><a href="https://yangsu.github.io/pull-request-tutorial/" target="_blank">https://yangsu.github.io/pull-request-tutorial/</a></p>
+      </section>
+
+      <section class="main-section" id="Section_2">
+        <header><h2>Section 2</h2></header>
+          <p>Section 2 if full of some very intersting stuff!</p>
+      </section>
+
+      <section class="main-section" id="Section_3">
+        <header><h2>Section 3</h2></header>
+        <p>Internet Explorer directed acyclic graph TL subclass k void database composition linker backend. Gradle budget lazy load constant const MIT license pairing bike-shedding yarn. Service worker inheritance serverless IRC frame rate JVM Babel variable engineer. Ping atomic design CS degree private environment JQuery. I AWS chmod IRC controller ecommerce platform cache.</p>
+        <p>Minimum viable product tech debt one-size-fits-all approach heap sort Agile TOML kernel elixir architecture. Bitcoin controller code-splitting Slack merge sort resolve JavaScript developer senior. Branch developer mock security serverless interface subclass UI frame rate. Idiosyncratic contexts static typing tabs vs spaces OOP linked list dependency injection circle back. Stack internet button compile linker LLVM machine learning homebrew class Hacker News MIT license.</p>
+        <p>Build tool concurrent asynchronous public const yarn legacy Ubuntu tl;dr composition over inheritance. Package manager CSV TL flexbox Angular stack trace database little Bobby Tables TOML. Looks good to me build tool contributor LGTM key-value clean code cherry pick.</p>
+      </section>
+
+      <section class="main-section" id="Section_4">
+        <header><h2>Section 4</h2></header>
+        <p>Internet Explorer directed acyclic graph TL subclass k void database composition linker backend. Gradle budget lazy load constant const MIT license pairing bike-shedding yarn. Service worker inheritance serverless IRC frame rate JVM Babel variable engineer. Ping atomic design CS degree private environment JQuery. I AWS chmod IRC controller ecommerce platform cache.</p>
+        <p>Minimum viable product tech debt one-size-fits-all approach heap sort Agile TOML kernel elixir architecture. Bitcoin controller code-splitting Slack merge sort resolve JavaScript developer senior. Branch developer mock security serverless interface subclass UI frame rate. Idiosyncratic contexts static typing tabs vs spaces OOP linked list dependency injection circle back. Stack internet button compile linker LLVM machine learning homebrew class Hacker News MIT license.</p>
+        <p>Build tool concurrent asynchronous public const yarn legacy Ubuntu tl;dr composition over inheritance. Package manager CSV TL flexbox Angular stack trace database little Bobby Tables TOML. Looks good to me build tool contributor LGTM key-value clean code cherry pick.</p>
+      </section>
+
+      <section class="main-section" id="Section_5">
+        <header><h2>Section 5</h2></header>
+        <p>Internet Explorer directed acyclic graph TL subclass k void database composition linker backend. Gradle budget lazy load constant const MIT license pairing bike-shedding yarn. Service worker inheritance serverless IRC frame rate JVM Babel variable engineer. Ping atomic design CS degree private environment JQuery. I AWS chmod IRC controller ecommerce platform cache.</p>
+        <p>Minimum viable product tech debt one-size-fits-all approach heap sort Agile TOML kernel elixir architecture. Bitcoin controller code-splitting Slack merge sort resolve JavaScript developer senior. Branch developer mock security serverless interface subclass UI frame rate. Idiosyncratic contexts static typing tabs vs spaces OOP linked list dependency injection circle back. Stack internet button compile linker LLVM machine learning homebrew class Hacker News MIT license.</p>
+        <p>Build tool concurrent asynchronous public const yarn legacy Ubuntu tl;dr composition over inheritance. Package manager CSV TL flexbox Angular stack trace database little Bobby Tables TOML. Looks good to me build tool contributor LGTM key-value clean code cherry pick.</p>
+      </section>
+
+    </main>
+
+    <script src="scripts.js"></script>
+  </body>
+</html>
